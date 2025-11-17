@@ -1,0 +1,23 @@
+//WAP TO FIND SUM OF ARRAY ELEMENTS
+#include <stdio.h>
+
+int main() {
+    int n, i, sum = 0;
+
+    scanf("%d", &n);
+    int arr[n];
+
+    // Read array elements
+    for(i = 0; i < n; i++) {
+        scanf("%d", &arr[i]);
+    }
+
+    // Calculate sum
+    for(i = 0; i < n; i++) {
+        sum += arr[i];
+    }
+
+    printf("%d", sum);
+
+    return 0;
+}
